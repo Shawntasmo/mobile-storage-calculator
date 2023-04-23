@@ -9,7 +9,19 @@
       background-color: #f2f2f2;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-
+    header {
+      background-image: url("http://www.penanshinkd.com.sg/Portals/0/pkd-logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100px;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
     .container {
       margin: 0 auto;
       max-width: 600px;
@@ -69,10 +81,11 @@
         font-size: 20px;
         padding: 8px 16px;
       }
-    }
+     }
 	</style>
 </head>
 <body>
+       <header></header>
 	<div class="container">
 		<form>
 			<div class="form-group">
@@ -81,13 +94,18 @@
 			</div>
 
 			<div class="form-group">
-				<label for="days" class="form-label">Number of days in storage:</label>
+				<label for="days" class="form-label">Number of days in storage <small>(Unstuffing date to Collection date *incl public holidays/sundays)<small>:</label>
 				<input type="number" id="days" name="days" class="form-input">
 			</div>
 
 			<button type="submit" class="button">Calculate</button>
 		</form>
 	</div>
+
+<footer>
+    <p>Please take note: If your storage days are more than 60 days contact us at : 6276 2880</p>
+                   </p>&copy; 2023 Penanshin (PSA KD). All rights reserved.</p>
+  </footer>
 
 	<script>
 		function calculateCharges() {
