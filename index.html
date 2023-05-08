@@ -120,11 +120,11 @@
     } else if (days <= 30) {
         storageCharges = (volume * 10 * 20) + (volume * 10 * 25) + (volume * (days - 20) * 30);
     } else if (days <= 40) {
-        storageCharges = (volume * 10 * 20) + (volume * 10 * 25) + (volume * 10 * 30) + (volume * (days - 30) * 35);
+        storageCharges = (volume * 10 * 20) + (volume * 10 * 25) + (volume * 10 * 30) + (volume * (days - 30) * 30);
     } else if (days <= 50) {
-        storageCharges = (volume * 10 * 20) + (volume * 10 * 25) + (volume * 10 * 30) + (volume * 10 * 35) + (volume * (days - 40) * 40);
+        storageCharges = (volume * 10 * 20) + (volume * 10 * 25) + (volume * 10 * 30) + (volume * 10 * 30) + (volume * (days - 40) * 30);
     } else if (days <= 60) {
-        storageCharges = (volume * 10 * 20) + (volume * 10 * 25) + (volume * 10 * 30) + (volume * 10 * 35) + (volume * 10 * 40) + (volume * (days - 50) * 45);
+        storageCharges = (volume * 10 * 20) + (volume * 10 * 25) + (volume * 10 * 30) + (volume * 10 * 30) + (volume * 10 * 30) + (volume * (days - 50) * 30);
     }
 
     var penaltyFee = storageCharges * 0.25;
